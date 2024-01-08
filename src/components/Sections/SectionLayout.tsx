@@ -1,6 +1,6 @@
 import React from "react";
 
-interface Props {
+interface Props extends React.HTMLAttributes<HTMLDivElement> {
   title?: string;
   children: React.ReactNode;
 }

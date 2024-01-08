@@ -22,6 +22,7 @@ const config: Config = {
         },
         blur: {
           1: "#ffffff1e",
+          2: "#ffffff33",
         },
       },
       backgroundBlur:
