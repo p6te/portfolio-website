@@ -1,8 +1,6 @@
-import "./style.css";
-
 export default function BluredBackroundAnimation() {
   return (
-    <div className="container">
+    <div className="background-container">
       <div className="gradient-bg">
         <svg xmlns="http://www.w3.org/2000/svg">
           <defs>
