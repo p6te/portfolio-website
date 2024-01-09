@@ -6,14 +6,14 @@ import FadeComponent from "../FadeComponent";
 
 export default function Hero() {
   return (
-    <div className="flex justify-center pt-20  px-40">
+    <div className="flex justify-center px-40  pt-20">
       <div className="flex flex-col gap-20">
         <FadeComponent>
           <div>
-            <h1 className=" text-8xl font-semibold bg-gradient-primary text-transparent bg-clip-text ">
+            <h1 className=" bg-gradient-primary bg-clip-text text-8xl font-semibold text-transparent ">
               Hello, I am Peter,
             </h1>
-            <h1 className="text-8xl font-semibold bg-gradient-to-b from-white to-transparent text-transparent bg-clip-text ">
+            <h1 className="bg-gradient-to-b from-white to-transparent bg-clip-text text-8xl font-semibold text-transparent ">
               creative web developer
             </h1>
           </div>
@@ -30,8 +30,8 @@ export default function Hero() {
           <Button outline>View all my works</Button>
         </div>
       </div>
-      <div className="w-1/3 relative">
-        <div className="filter grayscale contrast-200 relative flex place-items-center after:absolute after:-z-20 after:bottom-5 after:left-7 after:h-[300px] after:w-[400px] after:bg-gradient-radial after:from-sky-200 after:via-blue-200 after:blur-3xl after:content-['']  after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-20  z-[-1]">
+      <div className="relative w-1/3">
+        <div className="relative z-[-1] flex place-items-center  contrast-200 grayscale filter after:absolute after:bottom-5 after:left-7 after:-z-20 after:h-[300px] after:w-[400px] after:bg-gradient-radial after:from-sky-200 after:via-blue-200 after:blur-3xl  after:content-[''] after:dark:from-sky-900 after:dark:via-[#0141ff]  after:dark:opacity-20 ">
           <LottieAnimation
             animationData={Astronaut}
             width="500px"

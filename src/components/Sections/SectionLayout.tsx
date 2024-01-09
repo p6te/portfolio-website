@@ -10,7 +10,7 @@ export default function SectionLayout({ title, children }: Props) {
   return (
     <div className="flex flex-col items-center">
       {title && (
-        <FadeComponent className="text-8xl font-semibold bg-gradient-primary text-transparent bg-clip-text ">
+        <FadeComponent className="text-8xl font-semibold bg-gradient-primary text-transparent bg-clip-text p-3">
           {title}
         </FadeComponent>
       )}

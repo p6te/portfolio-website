@@ -1,3 +1,4 @@
+import FadeComponent from "@/components/FadeComponent";
 import Link from "next/link";
 import React, { Dispatch, SetStateAction } from "react";
 
@@ -20,9 +21,9 @@ export default function NavigationBox({ href, setSelectedBox }: Props) {
   };
   return (
     <Link
+      className="flex h-72 justify-center rounded-3xl bg-gradient-to-b from-blur-1 to-transparent pt-3 backdrop-blur"
       href={`#${href}`}
       scroll
-      className="w-1/6 h-72 bg-gradient-to-b from-blur-1 to-transparent rounded-3xl flex justify-center pt-3 backdrop-blur "
       onMouseOver={handleHover}
       onMouseOut={handleMouseOut}
     >

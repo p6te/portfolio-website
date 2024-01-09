@@ -24,7 +24,7 @@ export default function Navbar({ isNavigationSection }: Props) {
   });
 
   return (
-    <div className="sticky top-0 z-50">
+    <div className="pointer-events-none sticky top-0 z-50 ">
       <motion.nav
         variants={{
           visible: { y: 0, opacity: 1 },
@@ -35,10 +35,10 @@ export default function Navbar({ isNavigationSection }: Props) {
           duration: 0.35,
           ease: "easeInOut",
         }}
-        className="flex justify-between items-center mx-24 "
+        className=" mx-24 flex items-center justify-between"
       >
-        <h2 className="font-semibold bg-gradient-primary text-transparent bg-clip-text ">{`<Peter/>`}</h2>
-        <div className="flex gap-7 bg-blur-1 backdrop-blur rounded-full px-7 py-4 mt-1">
+        <h2 className=" pointer-events-auto bg-gradient-primary bg-clip-text font-semibold text-transparent">{`<Peter/>`}</h2>
+        <div className=" pointer-events-auto mt-1 flex gap-7 rounded-full bg-blur-1 px-7 py-4 backdrop-blur">
           <NavbarItem href="Projects" />
           <NavbarItem href="Skills" />
           <NavbarItem href="Experience" />
