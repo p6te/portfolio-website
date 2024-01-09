@@ -1,22 +1,23 @@
 import React from "react";
-import SectionLayout from "./SectionLayout";
 import Button from "../common/Button";
 import Astronaut from "../../assets/lottie/astronaut.json";
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import LottieAnimation from "../common/AnimationLottie";
+import FadeComponent from "../FadeComponent";
 
 export default function Hero() {
   return (
-    <div className="flex justify-center mt-20  mx-40">
+    <div className="flex justify-center pt-20  px-40">
       <div className="flex flex-col gap-20">
-        <div>
-          <h1 className=" text-8xl font-semibold bg-gradient-to-r from-gradient-1 via-gradient-2 via-gradient-3 to-gradient-4 text-transparent bg-clip-text ">
-            Hello, I am Peter,
-          </h1>
-          <h1 className="text-8xl font-semibold bg-gradient-to-b from-white to-transparent text-transparent bg-clip-text ">
-            creative web developer
-          </h1>
-        </div>
+        <FadeComponent>
+          <div>
+            <h1 className=" text-8xl font-semibold bg-gradient-to-r from-gradient-1 via-gradient-2 via-gradient-3 to-gradient-4 text-transparent bg-clip-text ">
+              Hello, I am Peter,
+            </h1>
+            <h1 className="text-8xl font-semibold bg-gradient-to-b from-white to-transparent text-transparent bg-clip-text ">
+              creative web developer
+            </h1>
+          </div>
+        </FadeComponent>
         <h5 className="w-2/3">
           Web Developer with a strong design background. I am a quick learner,
           highly motivated to grow both as a web developer and as an individual.

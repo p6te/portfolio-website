@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { Dispatch, SetStateAction, useState } from "react";
+import React, { Dispatch, SetStateAction } from "react";
 
 interface Props
   extends React.DetailedHTMLProps<

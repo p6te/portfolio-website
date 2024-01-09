@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={font.className}>
-        <div className="relative overflow-y-auto overflow-x-hidden">
+        <div className="relative">
           <main className="relative z-10 text-yellow-50">{children}</main>
           <BluredBackroundAnimation />
         </div>
