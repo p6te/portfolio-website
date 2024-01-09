@@ -37,7 +37,7 @@ export default function Navbar({ isNavigationSection }: Props) {
         }}
         className="flex justify-between items-center mx-24 "
       >
-        <h2 className="font-semibold bg-gradient-to-r from-gradient-1 via-gradient-2 via-gradient-3 to-gradient-4 text-transparent bg-clip-text ">{`<Peter/>`}</h2>
+        <h2 className="font-semibold bg-gradient-primary text-transparent bg-clip-text ">{`<Peter/>`}</h2>
         <div className="flex gap-7 bg-blur-1 backdrop-blur rounded-full px-7 py-4 mt-1">
           <NavbarItem href="Projects" />
           <NavbarItem href="Skills" />

@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="flex flex-col gap-20">
         <FadeComponent>
           <div>
-            <h1 className=" text-8xl font-semibold bg-gradient-to-r from-gradient-1 via-gradient-2 via-gradient-3 to-gradient-4 text-transparent bg-clip-text ">
+            <h1 className=" text-8xl font-semibold bg-gradient-primary text-transparent bg-clip-text ">
               Hello, I am Peter,
             </h1>
             <h1 className="text-8xl font-semibold bg-gradient-to-b from-white to-transparent text-transparent bg-clip-text ">
