@@ -10,7 +10,7 @@ export default function NavigationSection() {
       <div className="flex w-full items-center justify-center gap-2">
         <FadeComponent
           direction="up"
-          // triggerOnce
+          triggerOnce
           cascade
           className="inline-block w-1/6"
           duration={450}

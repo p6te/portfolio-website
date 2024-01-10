@@ -18,7 +18,7 @@ export default function Hero() {
             </h1>
           </div>
         </FadeComponent>
-        <h5 className="w-2/3">
+        <h5 className="w-2/3  font-extralight tracking-wide">
           Web Developer with a strong design background. I am a quick learner,
           highly motivated to grow both as a web developer and as an individual.
           I have worked extensively with financial, web3, and crypto

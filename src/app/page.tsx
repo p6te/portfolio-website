@@ -9,24 +9,25 @@ import Navigation from "@/components/Navigation";
 export default function Home() {
   return (
     <>
-      <Hero />
+      <div id="Hero">
+        <Hero />
+      </div>
       <Navigation />
-      <div>
-        <div id="Projects">
-          <Projects />
-        </div>
-        <div id="Skills">
-          <Skills />
-        </div>
-        <div id="Experience">
-          <Experience />
-        </div>
-        <div id="Testimonials">
-          <Testimonials />
-        </div>
-        <div id="Contact">
-          <Contact />
-        </div>
+
+      <div id="Projects">
+        <Projects />
+      </div>
+      <div id="Skills">
+        <Skills />
+      </div>
+      <div id="Experience">
+        <Experience />
+      </div>
+      <div id="Testimonials">
+        <Testimonials />
+      </div>
+      <div id="Contact">
+        <Contact />
       </div>
     </>
   );

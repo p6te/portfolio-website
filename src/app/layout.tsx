@@ -3,7 +3,10 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import BluredBackroundAnimation from "@/components/BluredBackgroundAnimation";
 
-const font = Poppins({ subsets: ["latin"], weight: ["400", "200", "600"] });
+const font = Poppins({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "<Peter/> Portfolio",

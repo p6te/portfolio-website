@@ -21,7 +21,7 @@ export default function NavigationBox({ href, setSelectedBox }: Props) {
   };
   return (
     <Link
-      className="flex h-72 justify-center rounded-3xl bg-gradient-to-b from-blur-1 to-transparent pt-3 backdrop-blur"
+      className="flex h-72 justify-center rounded-3xl bg-gradient-to-b from-blur-1 to-transparent pt-3 font-extralight tracking-wide backdrop-blur "
       href={`#${href}`}
       scroll
       onMouseOver={handleHover}

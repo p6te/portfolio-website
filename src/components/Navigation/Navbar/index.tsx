@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import NavbarItem from "./NavbarItem";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 interface Props {
   isNavigationSection: boolean;
@@ -24,7 +25,7 @@ export default function Navbar({ isNavigationSection }: Props) {
   });
 
   return (
-    <div className="pointer-events-none sticky top-0 z-50 ">
+    <div className="pointer-events-none sticky top-3 z-50 ">
       <motion.nav
         variants={{
           visible: { y: 0, opacity: 1 },
@@ -37,8 +38,12 @@ export default function Navbar({ isNavigationSection }: Props) {
         }}
         className=" mx-24 flex items-center justify-between"
       >
-        <h2 className=" pointer-events-auto bg-gradient-primary bg-clip-text font-semibold text-transparent">{`<Peter/>`}</h2>
-        <div className=" pointer-events-auto mt-1 flex gap-7 rounded-full bg-blur-1 px-7 py-4 backdrop-blur">
+        <Link
+          href="#Hero"
+          scroll
+          className="pointer-events-auto rounded-full border border-transparent border-opacity-50 bg-gradient-primary bg-clip-text px-4 py-2 text-3xl font-semibold  text-transparent hover:border-white "
+        >{`<Peter/>`}</Link>
+        <div className=" pointer-events-auto  flex gap-7 rounded-full bg-blur-1 px-7 py-4 backdrop-blur">
           <NavbarItem href="Projects" />
           <NavbarItem href="Skills" />
           <NavbarItem href="Experience" />
