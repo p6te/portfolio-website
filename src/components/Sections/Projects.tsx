@@ -4,7 +4,7 @@ import ProjectsList from "../ProjectsList";
 
 export default function Projects() {
   return (
-    <SectionLayout title="Projects ">
+    <SectionLayout title="Projects">
       <ProjectsList />
     </SectionLayout>
   );
