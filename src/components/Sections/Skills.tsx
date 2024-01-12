@@ -12,27 +12,65 @@ type Technologies = { name: string; skills: Skills }[];
 
 const technologies: Technologies = [
   {
-    name: "Languages",
+    name: "Core",
     skills: [
+      { name: "HTML", srcIcon: reactIcon },
+      { name: "Javascript", srcIcon: reactIcon },
       { name: "Typescript", srcIcon: reactIcon },
-      { name: "Css", srcIcon: reactIcon },
-      { name: "Sass", srcIcon: reactIcon },
+      { name: "Git", srcIcon: reactIcon },
+      { name: "npm/yarn", srcIcon: reactIcon },
+      { name: "Git", srcIcon: reactIcon },
+    ],
+  },
+  {
+    name: "Frameworks",
+    skills: [
+      { name: "ReactJs", srcIcon: reactIcon },
+      { name: "NextJs", srcIcon: reactIcon },
     ],
   },
   {
     name: "UI styling",
     skills: [
-      { name: "Sass", srcIcon: reactIcon },
       { name: "Css", srcIcon: reactIcon },
-      { name: "typescript", srcIcon: reactIcon },
+      { name: "Sass", srcIcon: reactIcon },
+      { name: "Styled Components", srcIcon: reactIcon },
+      { name: "Tailwind Css", srcIcon: reactIcon },
+      { name: "Material-Ui", srcIcon: reactIcon },
+      { name: "Framer Motion", srcIcon: reactIcon },
+      { name: "Figma", srcIcon: reactIcon },
     ],
   },
   {
     name: "Libraries",
     skills: [
-      { name: "Css", srcIcon: reactIcon },
-      { name: "typescript", srcIcon: reactIcon },
-      { name: "typescript", srcIcon: reactIcon },
+      { name: "Redux", srcIcon: reactIcon },
+      { name: "React Hook Form", srcIcon: reactIcon },
+      { name: "Firebase", srcIcon: reactIcon },
+      { name: "Axios", srcIcon: reactIcon },
+      { name: "StoryBook", srcIcon: reactIcon },
+    ],
+  },
+  {
+    name: "IDE",
+    skills: [
+      { name: "WebStorm", srcIcon: reactIcon },
+      { name: "Visual Studio Code", srcIcon: reactIcon },
+    ],
+  },
+  {
+    name: "Browser",
+    skills: [{ name: "Chrome DevTools", srcIcon: reactIcon }],
+  },
+  {
+    name: "API",
+    skills: [{ name: "REST API", srcIcon: reactIcon }],
+  },
+  {
+    name: "Testing",
+    skills: [
+      { name: "Jest/Vitest", srcIcon: reactIcon },
+      { name: "Cypress", srcIcon: reactIcon },
     ],
   },
 ];
@@ -76,7 +114,7 @@ export default function Skills() {
                         alt={skill.name}
                         className="bg-slate-100"
                       />
-                      <span>{skill.name}</span>
+                      <span className="whitespace-nowrap">{skill.name}</span>
                     </motion.div>
                   );
                 })}
@@ -84,7 +122,7 @@ export default function Skills() {
             );
           })}
         </motion.ul>
-        <motion.div className="pointer-events-none absolute left-0 top-0 z-[-1] flex h-full w-full items-center justify-center whitespace-nowrap text-9xl font-semibold opacity-40 blur">
+        <motion.div className="pointer-events-none absolute left-0 top-0 z-[-1] flex h-full w-full items-center justify-center whitespace-nowrap text-9xl font-semibold opacity-60 blur">
           {hoveredTechnology}
         </motion.div>
       </div>

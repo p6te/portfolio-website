@@ -25,7 +25,7 @@ export default function Navbar({ isNavigationSection }: Props) {
   });
 
   return (
-    <div className="pointer-events-none sticky top-3 z-50 ">
+    <div className="pointer-events-none sticky top-3 z-50 mr-40 ">
       <motion.nav
         variants={{
           visible: { y: 0, opacity: 1 },
@@ -50,7 +50,7 @@ export default function Navbar({ isNavigationSection }: Props) {
           <NavbarItem href="Testimonials" />
           <NavbarItem href="Contact" />
         </div>
-        <h2 className="invisible">{`<Peter/>`}</h2>
+        <h2></h2>
       </motion.nav>
     </div>
   );
