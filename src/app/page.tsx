@@ -8,7 +8,7 @@ import Navigation from "@/components/Navigation";
 
 export default function Home() {
   return (
-    <>
+    <div className="mx-20">
       <div id="Hero">
         <Hero />
       </div>
@@ -29,6 +29,6 @@ export default function Home() {
       <div id="Contact">
         <Contact />
       </div>
-    </>
+    </div>
   );
 }

@@ -16,12 +16,7 @@ const config: Config = {
           "linear-gradient(90deg, #B16CEA,#FF5E69,#FF8A56,#FFA84B)",
       },
       colors: {
-        gradient: {
-          1: "#B16CEA",
-          2: "#FF5E69",
-          3: "#FF8A56",
-          4: "#FFA84B",
-        },
+        gradient: "linear-gradient(90deg, #B16CEA,#FF5E69,#FF8A56,#FFA84B)",
         blur: {
           1: "#ffffff1e",
           2: "#ffffff33",
