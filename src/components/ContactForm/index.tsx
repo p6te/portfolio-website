@@ -24,7 +24,6 @@ export default function ContactForm() {
     const result = await sendEmail(data);
 
     if (result?.success) {
-      console.log({ data: result.data });
       toast.success("Email sent!");
       reset();
       return;
@@ -86,8 +85,15 @@ export default function ContactForm() {
       </div>
 
       <Button disabled={isSubmitting} outline type="submit">
-        {isSubmitting ? "Submitting..." : "Submit"}
+        {isSubmitting ? "Sending..." : "Send"}
       </Button>
+      <div className="mt-6">
+        <span className=" font-extralight text-white">
+          Or contact directly to:
+        </span>
+        <br />
+        <span className="text-white">piotr.matlak.contact@gmail.com</span>
+      </div>
     </form>
   );
 }

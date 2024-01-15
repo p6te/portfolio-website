@@ -1,6 +1,7 @@
 import React from "react";
 import SectionLayout from "./SectionLayout";
 import Testimonial from "../Testimonial";
+import FadeComponent from "../FadeComponent";
 
 const testimonials = [
   {
@@ -25,10 +26,17 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <SectionLayout title="Testimonials">
-      <div className="mb-40 mt-20 flex gap-4">
-        {testimonials.map((item, index) => (
-          <Testimonial key={index} {...item} />
-        ))}
+      <div className="mt-20 flex gap-4">
+        <FadeComponent
+          triggerOnce
+          cascade
+          direction="up"
+          className="h-min flex-1 flex-col justify-center gap-4 rounded-3xl  border-gradient   bg-white  bg-opacity-10 px-8 py-6 backdrop-blur"
+        >
+          {testimonials.map((item, index) => (
+            <Testimonial key={index} {...item} />
+          ))}
+        </FadeComponent>
       </div>
     </SectionLayout>
   );

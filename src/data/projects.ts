@@ -62,7 +62,7 @@ export const projects: Project[] = [
   {
     title: "2048 Game",
     description:
-      "The famous game 2048, the recreation of which was one of my first projects. the game is created in pure javascript. Check out the apps yourself and try to get as many points as possible! Instructions: Use the arrows to move the tiles.",
+      "The famous game 2048, the recreation of which was one of my first projects, is created in pure JavaScript. Check out the app yourself and try to get as many points as possible! Instructions: Use the arrows to move the tiles.",
     tags: ["Javascript", "CSS", "HTML"],
     imgSrc: game2048,
     github: "https://github.com/p6te/2048---game",
