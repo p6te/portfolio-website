@@ -1,79 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import SectionLayout from "./SectionLayout";
-import reactIcon from "@/assets/technologies/reactIcon.png";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
-type Skills = { name: string; srcIcon: string | StaticImport }[];
-
-type Technologies = { name: string; skills: Skills }[];
-
-const technologies: Technologies = [
-  {
-    name: "Core",
-    skills: [
-      { name: "HTML", srcIcon: reactIcon },
-      { name: "Javascript", srcIcon: reactIcon },
-      { name: "Typescript", srcIcon: reactIcon },
-      { name: "Git", srcIcon: reactIcon },
-      { name: "npm/yarn", srcIcon: reactIcon },
-      { name: "Git", srcIcon: reactIcon },
-    ],
-  },
-  {
-    name: "Frameworks",
-    skills: [
-      { name: "ReactJs", srcIcon: reactIcon },
-      { name: "NextJs", srcIcon: reactIcon },
-    ],
-  },
-  {
-    name: "UI styling",
-    skills: [
-      { name: "Css", srcIcon: reactIcon },
-      { name: "Sass", srcIcon: reactIcon },
-      { name: "Styled Components", srcIcon: reactIcon },
-      { name: "Tailwind Css", srcIcon: reactIcon },
-      { name: "Material-Ui", srcIcon: reactIcon },
-      { name: "Framer Motion", srcIcon: reactIcon },
-      { name: "Figma", srcIcon: reactIcon },
-    ],
-  },
-  {
-    name: "Libraries",
-    skills: [
-      { name: "Redux", srcIcon: reactIcon },
-      { name: "React Hook Form", srcIcon: reactIcon },
-      { name: "Firebase", srcIcon: reactIcon },
-      { name: "Axios", srcIcon: reactIcon },
-      { name: "StoryBook", srcIcon: reactIcon },
-    ],
-  },
-  {
-    name: "IDE",
-    skills: [
-      { name: "WebStorm", srcIcon: reactIcon },
-      { name: "Visual Studio Code", srcIcon: reactIcon },
-    ],
-  },
-  {
-    name: "Browser",
-    skills: [{ name: "Chrome DevTools", srcIcon: reactIcon }],
-  },
-  {
-    name: "API",
-    skills: [{ name: "REST API", srcIcon: reactIcon }],
-  },
-  {
-    name: "Testing",
-    skills: [
-      { name: "Jest/Vitest", srcIcon: reactIcon },
-      { name: "Cypress", srcIcon: reactIcon },
-    ],
-  },
-];
+import { technologies } from "@/data/skills";
 
 export default function Skills() {
   const [hoveredTechnology, setHoveredTechnology] = useState("Testing");
@@ -109,11 +39,13 @@ export default function Skills() {
                           : "initial"
                       }
                     >
-                      <Image
-                        src={skill.srcIcon}
-                        alt={skill.name}
-                        className="bg-slate-100"
-                      />
+                      {skill.srcIcon && (
+                        <Image
+                          src={skill.srcIcon}
+                          alt={skill.name}
+                          height={32}
+                        />
+                      )}
                       <span className="whitespace-nowrap">{skill.name}</span>
                     </motion.div>
                   );
@@ -122,7 +54,7 @@ export default function Skills() {
             );
           })}
         </motion.ul>
-        <motion.div className="pointer-events-none absolute left-0 top-0 z-[-1] flex h-full w-full items-center justify-center whitespace-nowrap text-9xl font-semibold opacity-60 blur">
+        <motion.div className="pointer-events-none absolute left-0 top-0 z-[-1] flex h-full w-full items-center justify-center whitespace-nowrap text-[200px] font-semibold opacity-60 blur-sm">
           {hoveredTechnology}
         </motion.div>
       </div>
