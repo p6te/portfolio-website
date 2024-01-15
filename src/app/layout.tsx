@@ -9,7 +9,7 @@ const font = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "<Peter/> Portfolio",
+  title: "<Peter/> - personal website",
   description: "Portfolio website made by Piotr Matlak.",
 };
 

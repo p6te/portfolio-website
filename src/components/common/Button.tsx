@@ -1,14 +1,14 @@
 import React from "react";
 
-interface Props {
-  outline?: boolean;
-  children?: React.ReactNode;
-  otherProps?: React.DetailedHTMLProps<
+interface Props
+  extends React.DetailedHTMLProps<
     React.ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
-  >;
+  > {
+  outline?: boolean;
+  children?: React.ReactNode;
 }
-export default function Button({ outline, children, otherProps }: Props) {
+export default function Button({ outline, children, ...otherProps }: Props) {
   return (
     <button
       type="button"

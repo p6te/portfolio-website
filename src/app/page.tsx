@@ -5,6 +5,7 @@ import Projects from "@/components/Sections/Projects";
 import Skills from "@/components/Sections/Skills";
 import Testimonials from "@/components/Sections/Testimonials";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Sections/Footer";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       <div id="Contact">
         <Contact />
       </div>
+      <Footer />
     </div>
   );
 }
