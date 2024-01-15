@@ -23,6 +23,7 @@ export const projects: Project[] = [
     tags: [
       "ReactJs",
       "TypeScript",
+      "Redux",
       "Styled-Components",
       "Firebase",
       "Emoji",

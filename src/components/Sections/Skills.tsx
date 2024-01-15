@@ -10,7 +10,7 @@ export default function Skills() {
 
   return (
     <SectionLayout title="Tech stack" id="skills">
-      <div className="relative mb-40 mt-10">
+      <div className="relative  mt-10">
         <motion.ul className="flex flex-col items-center justify-center gap-2">
           {technologies.map((technology, index) => {
             return (

@@ -68,7 +68,7 @@ export default function ProjectItem({
               {description}
             </motion.p>
 
-            <ul className="flex flex-wrap items-center justify-center gap-2">
+            <ul className="flex flex-wrap items-center gap-2">
               {tags.map((tag, index) => {
                 return <SkillTag key={index} name={tag} />;
               })}

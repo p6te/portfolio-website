@@ -29,6 +29,9 @@ export default function BluredBackroundAnimation() {
           <div className="g6"></div>
           <div className="g7"></div>
           <div className="g8"></div>
+          <div className="g9"></div>
+          <div className="g10"></div>
+          <div className="g11"></div>
         </div>
       </div>
     </div>
