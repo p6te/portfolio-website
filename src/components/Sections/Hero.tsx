@@ -3,31 +3,38 @@ import Button from "../common/Button";
 import Astronaut from "../../assets/lottie/astronaut.json";
 import LottieAnimation from "../common/AnimationLottie";
 import FadeComponent from "../FadeComponent";
+import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="flex justify-center px-40  pt-20">
-      <div className="flex flex-col gap-20">
+    <div className="flex justify-center  pt-20">
+      <div className="flex flex-col gap-10">
         <FadeComponent>
-          <div>
+          <div className="mb-10">
             <h1 className=" bg-gradient-primary bg-clip-text text-8xl font-semibold text-transparent ">
-              Hello, I am Peter,
+              Hello, I&apos;m Peter.
             </h1>
             <h1 className="bg-gradient-to-b from-white to-transparent bg-clip-text text-8xl font-semibold text-transparent ">
-              creative web developer
+              Creative web developer
             </h1>
           </div>
         </FadeComponent>
         <h5 className="w-2/3  font-extralight tracking-wide">
-          Web Developer with a strong design background. I am a quick learner,
-          highly motivated to grow both as a web developer and as an individual.
-          I have worked extensively with financial, web3, and crypto
-          technologies.
+          Welcome to my digital space! I&apos;m Web Developer on a journey to
+          create impactful and immersive online experiences. Armed with a love
+          for coding and a keen eye for design, I transform ideas into dynamic
+          and user-friendly websites. Join me on this exciting coding adventure,
+          where innovation meets functionality, and let&apos;s build the web of
+          tomorrow together!
         </h5>
         <div>
-          <Button>Contact me</Button>
+          <Link href={"#Contact"} scroll>
+            <Button>Contact me</Button>
+          </Link>
           <span className="mx-2"></span>
-          <Button outline>View all my works</Button>
+          <Link href={"#Projects"} scroll>
+            <Button outline>View all my works</Button>
+          </Link>
         </div>
       </div>
       <div className="relative w-1/3">

@@ -10,7 +10,7 @@ import { Toaster } from "sonner";
 
 export default function Home() {
   return (
-    <div className="mx-20">
+    <div className="mx-32">
       <div id="Hero">
         <Hero />
       </div>

@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import NavigationSection from "./NavigationSection";
 import Navbar from "./Navbar";
 import { useInView } from "framer-motion";

@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { MotionConfig, motion, useAnimationControls } from "framer-motion";
 import Button from "@/components/common/Button";
 import Image, { StaticImageData } from "next/image";
-import { Project } from ".";
 import SkillTag from "./SkillTag";
+import { Project } from "@/data/projects";
 
 interface Props extends Project {
   title: string;
@@ -68,18 +68,23 @@ export default function ProjectItem({
               {description}
             </motion.p>
 
-            <ul className="flex flex-wrap items-center justify-center gap-4">
+            <ul className="flex flex-wrap items-center justify-center gap-2">
               {tags.map((tag, index) => {
                 return <SkillTag key={index} name={tag} />;
               })}
             </ul>
 
             <div className="mb-5 mt-8">
-              <Button>
-                <a target="_blank" href={preview} rel="noopener noreferrer">
-                  Preview
-                </a>
-              </Button>
+              {preview && (
+                <>
+                  <Button>
+                    <a target="_blank" href={preview} rel="noopener noreferrer">
+                      Preview
+                    </a>
+                  </Button>
+                  <span className="mx-2"></span>
+                </>
+              )}
               <Button outline>
                 <a target="_blank" href={github} rel="noopener noreferrer">
                   Github
@@ -94,7 +99,7 @@ export default function ProjectItem({
             }`}
             variants={{
               initial: { transform: "translateY(+300px)" },
-              hover: { transform: "translateY(-50px)" },
+              hover: { transform: "translateY(+50px)" },
               open: {
                 transform: "translateY(0)",
               },

@@ -12,7 +12,7 @@ export default function NavigationSection() {
           direction="up"
           triggerOnce
           cascade
-          className="inline-block w-1/6"
+          className="flex-1"
           duration={450}
         >
           <NavigationBox href="Projects" setSelectedBox={setSelectedBox} />
