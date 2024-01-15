@@ -54,7 +54,7 @@ export default function Skills() {
             );
           })}
         </motion.ul>
-        <motion.div className="pointer-events-none absolute left-0 top-0 z-[-1] flex h-full w-full items-center justify-center whitespace-nowrap text-[200px] font-semibold opacity-60 blur-sm">
+        <motion.div className="pointer-events-none absolute left-0 top-0 z-[-1] flex h-full w-full items-center justify-center whitespace-nowrap text-[200px] font-semibold opacity-20 blur-sm">
           {hoveredTechnology}
         </motion.div>
       </div>
