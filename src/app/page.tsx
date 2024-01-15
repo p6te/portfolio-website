@@ -6,6 +6,7 @@ import Skills from "@/components/Sections/Skills";
 import Testimonials from "@/components/Sections/Testimonials";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Sections/Footer";
+import { Toaster } from "sonner";
 
 export default function Home() {
   return (
@@ -27,9 +28,11 @@ export default function Home() {
       <div id="Testimonials">
         <Testimonials />
       </div>
+      <Toaster position="top-center" />
       <div id="Contact">
         <Contact />
       </div>
+
       <Footer />
     </div>
   );

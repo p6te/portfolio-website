@@ -22,7 +22,7 @@ export default function ContactForm() {
 
   const processForm: SubmitHandler<ContactFormInputs> = async (data) => {
     const result = await sendEmail(data);
-    console.log(result);
+
     if (result?.success) {
       console.log({ data: result.data });
       toast.success("Email sent!");
@@ -42,7 +42,7 @@ export default function ContactForm() {
     >
       <div>
         <label className="text-gray-400">
-          Name
+          Name/Company
           <input
             className="w-full rounded-full border-none bg-white   bg-opacity-10  px-4 py-3  text-white outline-none backdrop-blur"
             {...register("name")}
@@ -72,6 +72,7 @@ export default function ContactForm() {
 
       <div>
         <label className="text-gray-400">
+          Message
           <textarea
             rows={5}
             cols={5}
