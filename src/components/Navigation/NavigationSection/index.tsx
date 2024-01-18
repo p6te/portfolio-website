@@ -6,7 +6,7 @@ export default function NavigationSection() {
   const [selectedBox, setSelectedBox] = useState("");
 
   return (
-    <div className="relative mb-20 mt-40">
+    <div className="relative mb-20 mt-40 hidden lg:block">
       <div className="flex w-full items-center justify-center gap-2">
         <FadeComponent
           direction="up"

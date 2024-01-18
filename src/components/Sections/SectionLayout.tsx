@@ -8,9 +8,9 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
 
 export default function SectionLayout({ title, children }: Props) {
   return (
-    <div className="mb-28 flex flex-col items-center">
+    <div className="mb-10 flex flex-col items-center md:mb-28">
       {title && (
-        <FadeComponent className="bg-gradient-primary bg-clip-text p-3 text-8xl font-semibold text-transparent">
+        <FadeComponent className="bg-gradient-primary bg-clip-text p-3 text-5xl font-semibold text-transparent md:text-8xl">
           {title}
         </FadeComponent>
       )}

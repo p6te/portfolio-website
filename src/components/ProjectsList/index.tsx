@@ -8,7 +8,7 @@ function ProjectsList() {
   const [openedProjectIndex, setOpenedProjectIndex] = useState(0);
 
   return (
-    <ul className="mt-20 flex w-full flex-col gap-8">
+    <ul className="mt-10 flex w-full flex-col gap-4 md:mt-20 md:gap-8">
       {projects.map((project, index) => (
         <FadeComponent key={index} direction="left" delay={300} triggerOnce>
           <ProjectItem

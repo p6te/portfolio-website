@@ -14,7 +14,7 @@ export default function NavbarItem({ href }: Props) {
     <Link
       href={`#${href}`}
       scroll
-      className="hover:bg-gradient-primary hover:text-transparent hover:bg-clip-text transition-all ease-in-out"
+      className="text-sm transition-all ease-in-out hover:bg-gradient-primary hover:bg-clip-text hover:text-transparent lg:text-base"
     >
       {href}
     </Link>

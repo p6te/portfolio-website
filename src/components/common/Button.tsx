@@ -14,8 +14,8 @@ export default function Button({ outline, children, ...otherProps }: Props) {
       type="button"
       className={
         outline
-          ? " mb-2 rounded-full px-5 py-2.5 text-center text-xl text-white outline outline-1 transition hover:bg-blur-1"
-          : " mb-2 rounded-full bg-gradient-to-br from-pink-500 to-orange-400 px-5 py-2.5 text-center text-xl  font-medium text-white transition hover:bg-gradient-to-bl "
+          ? "mb-1 rounded-full px-3 py-1.5 text-center text-sm  text-white outline outline-1  transition hover:bg-blur-1 md:mb-2 md:px-5 md:py-2.5 md:text-xl "
+          : " mb-1 rounded-full bg-gradient-to-br from-pink-500  to-orange-400 px-3 py-1.5 text-center text-sm  font-medium text-white transition hover:bg-gradient-to-bl  md:mb-2 md:px-5 md:py-2.5 md:text-xl "
       }
       {...otherProps}
     >

@@ -20,7 +20,7 @@ const Footer = () => {
         />
         <ContactButton href="https://github.com/p6te" src={GithubIcon} isMail />
       </div>
-      <small className="font-extralight">
+      <small className="text-sm font-extralight md:text-base">
         &copy; Copyright 2024, Piotr Matlak
       </small>
     </footer>

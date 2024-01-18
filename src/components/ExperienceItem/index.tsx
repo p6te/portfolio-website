@@ -26,18 +26,18 @@ function ExperienceItem({
       triggerOnce
     >
       <div
-        className={`flex flex-col    gap-2    rounded-3xl from-blur-1 to-transparent px-8 py-10 backdrop-blur ${
+        className={`flex flex-col  gap-1  rounded-3xl    from-blur-1 to-transparent px-4 py-5 backdrop-blur md:gap-2 md:px-8 md:py-10 ${
           isRightSide ? " bg-gradient-to-r" : " bg-gradient-to-l"
         }`}
       >
-        <h3 className="text-2xl">{time}</h3>
-        <h4 className="text-xl">{company}</h4>
-        <h2 className="mt-3 bg-gradient-primary  bg-clip-text text-5xl font-semibold text-transparent">
+        <h3 className="text-xl md:text-2xl">{time}</h3>
+        <h4 className="text-l md:text-xl">{company}</h4>
+        <h2 className="mt-2 bg-gradient-primary bg-clip-text  text-2xl font-semibold text-transparent md:mt-3 md:text-5xl">
           {position}
         </h2>
 
         <p className="font-extralight">{description}</p>
-        <h6 className="mt-3 font-semibold">Environment</h6>
+        <h6 className="mt-2 font-semibold md:mt-3">Environment</h6>
         <div>
           {enviroment.map((item, index) =>
             index === 0 ? (
@@ -52,7 +52,7 @@ function ExperienceItem({
             ),
           )}
         </div>
-        <h6 className="mt-3 font-semibold">Technologies</h6>
+        <h6 className="mt-2 font-semibold md:mt-3">Technologies</h6>
         <div>
           {technologies.map((item, index) =>
             index === 0 ? (

@@ -66,11 +66,11 @@ export default function Experience({
 }: React.HTMLAttributes<HTMLDivElement>) {
   return (
     <SectionLayout title="Experience" {...props}>
-      <div className=" mt-20 flex gap-20">
+      <div className="mt-10 flex flex-col gap-10 md:mt-20 lg:flex-row lg:gap-20">
         <div className="flex-1">
           <ExperienceItem {...ExperienceData[0]} />
         </div>
-        <div className="flex-1 pt-60">
+        <div className="flex-1 lg:pt-60">
           <ExperienceItem {...ExperienceData[1]} />
         </div>
       </div>
