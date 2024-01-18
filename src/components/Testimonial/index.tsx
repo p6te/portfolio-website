@@ -9,8 +9,8 @@ interface Props {
 function Testimonial({ author, position, text }: Props) {
   return (
     <div>
-      <p className="mb-6 font-extralight">{text}</p>
-      <div className=" bg-gradient-primary  bg-clip-text text-xl font-semibold text-transparent">
+      <p className="mb-6 text-justify font-extralight">{text}</p>
+      <div className=" bg-gradient-primary  bg-clip-text text-lg font-semibold text-transparent">
         {author}
       </div>
       <div className="text-xl font-semibold ">{position}</div>

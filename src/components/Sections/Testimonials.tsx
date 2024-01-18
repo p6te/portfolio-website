@@ -26,7 +26,7 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <SectionLayout title="Testimonials">
-      <div className="mt-20 flex flex-col gap-4 lg:flex-row">
+      <div className="mt-1 flex flex-col gap-4 md:mt-12 lg:flex-row">
         <FadeComponent
           triggerOnce
           cascade

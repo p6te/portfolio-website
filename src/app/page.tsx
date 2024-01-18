@@ -16,7 +16,7 @@ export default function Home() {
       </div>
       <Navigation />
 
-      <div id="Projects">
+      <div id="Projects" className="mt-16 md:mt-0">
         <Projects />
       </div>
       <div id="Skills">

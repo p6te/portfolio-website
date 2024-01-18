@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <div className="flex justify-center pt-10 md:pt-20">
       <div className="flex flex-col gap-14">
-        <FadeComponent>
+        <FadeComponent triggerOnce direction="left">
           <div>
             <h1 className=" bg-gradient-primary bg-clip-text text-5xl  font-semibold text-transparent md:text-8xl ">
               Hello, I&apos;m Peter.
@@ -19,33 +19,39 @@ export default function Hero() {
             </h1>
           </div>
         </FadeComponent>
-        <h5 className="w-2/3  text-xs font-extralight tracking-wide md:text-base ">
-          Welcome to my digital space! I&apos;m Web Developer on a journey to
-          create impactful and immersive online experiences. Armed with a love
-          for coding and a keen eye for design, I transform ideas into dynamic
-          and user-friendly websites. Join me on this exciting coding adventure,
-          where innovation meets functionality, and let&apos;s build the web of
-          tomorrow together!
-        </h5>
-        <div>
-          <Link href={"#Contact"} scroll>
-            <Button>Contact me</Button>
-          </Link>
-          <span className="mx-2"></span>
-          <Link href={"#Projects"} scroll>
-            <Button outline>View all my works</Button>
-          </Link>
-        </div>
+        <FadeComponent triggerOnce delay={200} direction="left">
+          <h5 className="w-2/3  text-xs font-extralight tracking-wide md:text-base ">
+            Welcome to my digital space! I&apos;m Web Developer on a journey to
+            create impactful and immersive online experiences. Armed with a love
+            for coding and a keen eye for design, I transform ideas into dynamic
+            and user-friendly websites. Join me on this exciting coding
+            adventure, where innovation meets functionality, and let&apos;s
+            build the web of tomorrow together!
+          </h5>
+        </FadeComponent>
+        <FadeComponent triggerOnce delay={500} direction="left">
+          <div>
+            <Link href={"#Contact"} scroll>
+              <Button>Contact me</Button>
+            </Link>
+            <span className="mx-2"></span>
+            <Link href={"#Projects"} scroll>
+              <Button outline>View all my works</Button>
+            </Link>
+          </div>
+        </FadeComponent>
       </div>
-      <div className="relative hidden w-1/3 xl:block">
-        <div className="relative z-[-1] flex place-items-center  contrast-200 grayscale filter after:absolute after:bottom-5 after:left-7 after:-z-20 after:h-[300px] after:w-[400px] after:bg-gradient-radial after:from-sky-200 after:via-blue-200 after:blur-3xl  after:content-[''] after:dark:from-sky-900 after:dark:via-[#0141ff]  after:dark:opacity-20 ">
-          <LottieAnimation
-            animationData={Astronaut}
-            width="500px"
-            height="500px"
-          />
+      <FadeComponent triggerOnce direction="right">
+        <div className="relative hidden w-1/3 xl:block">
+          <div className="relative z-[-1] flex place-items-center  contrast-200 grayscale filter after:absolute after:bottom-5 after:left-7 after:-z-20 after:h-[300px] after:w-[400px] after:bg-gradient-radial after:from-sky-200 after:via-blue-200 after:blur-3xl  after:content-[''] after:dark:from-sky-900 after:dark:via-[#0141ff]  after:dark:opacity-20 ">
+            <LottieAnimation
+              animationData={Astronaut}
+              width="500px"
+              height="500px"
+            />
+          </div>
         </div>
-      </div>
+      </FadeComponent>
     </div>
   );
 }

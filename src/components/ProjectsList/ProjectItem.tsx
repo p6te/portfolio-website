@@ -28,7 +28,7 @@ export default function ProjectItem({
     <>
       {isLg ? (
         <motion.li
-          className={`w-full overflow-hidden rounded-3xl bg-blur-1 px-6 pt-3 backdrop-blur md:px-8 md:pt-5   ${
+          className={`w-full overflow-hidden rounded-3xl bg-blur-1 px-6 pt-3 backdrop-blur md:px-10 md:py-8   ${
             !isOpen && "hover:cursor-pointer"
           }`}
           onClick={onClick}
@@ -52,10 +52,10 @@ export default function ProjectItem({
                   filter: "none",
                 },
               }}
-              className={`flex w-full  ${!isOpen && "h-[92px]"}`}
+              className={`flex w-full  ${!isOpen && "h-[92px]"} gap-12`}
               animate={isOpen ? "open" : "initial"}
             >
-              <motion.div className="flex-1 pr-4">
+              <motion.div className="flex-1 ">
                 <motion.h2
                   variants={{
                     initial: { filter: "blur(4px)" },
@@ -63,17 +63,17 @@ export default function ProjectItem({
                     open: { filter: "none" },
                   }}
                   animate={isOpen ? "open" : isHover ? "hover" : "initial"}
-                  className={`text-4xl font-semibold lg:text-6xl   ${
+                  className={`my-4 text-4xl font-semibold  lg:text-6xl ${
                     !isOpen && "blur-sm"
                   }`}
                 >
                   {title}
                 </motion.h2>
-                <motion.p className="my-8 font-extralight tracking-wide ">
+                <motion.p className="my-12 font-extralight tracking-wide ">
                   {description}
                 </motion.p>
 
-                <ul className="flex flex-wrap items-center gap-2">
+                <ul className="flex flex-wrap items-center gap-3">
                   {tags.map((tag, index) => {
                     return <SkillTag key={index} name={tag} />;
                   })}
@@ -103,7 +103,7 @@ export default function ProjectItem({
               </motion.div>
 
               <motion.div
-                className={`mb-5 flex  flex-1  items-center justify-center rounded-3xl ${
+                className={`mb-5 flex  flex-1  items-center justify-center rounded-2xl ${
                   !isOpen && "translate-y-[300px]"
                 }`}
                 variants={{
@@ -115,7 +115,7 @@ export default function ProjectItem({
                 }}
                 animate={isOpen ? "open" : isHover ? "hover" : "initial"}
               >
-                <Image src={imgSrc} alt={imgSrc.src} className=" rounded-3xl" />
+                <Image src={imgSrc} alt={imgSrc.src} className=" rounded-2xl" />
               </motion.div>
             </motion.div>
           </MotionConfig>
