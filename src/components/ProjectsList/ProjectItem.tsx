@@ -63,7 +63,9 @@ export default function ProjectItem({
                     open: { filter: "none" },
                   }}
                   animate={isOpen ? "open" : isHover ? "hover" : "initial"}
-                  className={`text-7xl font-semibold   ${!isOpen && "blur-sm"}`}
+                  className={`text-4xl font-semibold lg:text-6xl   ${
+                    !isOpen && "blur-sm"
+                  }`}
                 >
                   {title}
                 </motion.h2>

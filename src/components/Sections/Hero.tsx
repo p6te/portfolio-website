@@ -8,9 +8,9 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <div className="flex justify-center pt-10 md:pt-20">
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-14">
         <FadeComponent>
-          <div className="md:mb-10">
+          <div>
             <h1 className=" bg-gradient-primary bg-clip-text text-5xl  font-semibold text-transparent md:text-8xl ">
               Hello, I&apos;m Peter.
             </h1>

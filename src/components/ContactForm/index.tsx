@@ -37,7 +37,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(processForm)}
-      className="mx-auto flex  w-3/4 flex-1 flex-col gap-4 text-gray-600  "
+      className="flex  w-full flex-1 flex-col gap-4 text-gray-600  "
     >
       <div>
         <label className="text-gray-400">

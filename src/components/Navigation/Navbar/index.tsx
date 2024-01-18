@@ -25,7 +25,7 @@ export default function Navbar({ isNavigationSection }: Props) {
   });
 
   return (
-    <div className="pointer-events-none sticky top-3 z-50 hidden w-full  md:block">
+    <div className="pointer-events-none sticky top-3 z-50 hidden  w-full md:block ">
       <motion.nav
         variants={{
           visible: { y: 0, opacity: 1 },
@@ -36,7 +36,7 @@ export default function Navbar({ isNavigationSection }: Props) {
           duration: 0.35,
           ease: "easeInOut",
         }}
-        className="flex items-center justify-between  "
+        className="mr-[110px] flex items-center  justify-between lg:mr-[160px] "
       >
         <Link
           href="#Hero"
@@ -50,7 +50,7 @@ export default function Navbar({ isNavigationSection }: Props) {
           <NavbarItem href="Testimonials" />
           <NavbarItem href="Contact" />
         </div>
-        <div className="w-[45px] lg:w-[53px]" />
+        <div />
       </motion.nav>
     </div>
   );
