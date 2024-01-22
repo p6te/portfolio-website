@@ -8,7 +8,7 @@ const ExperienceData = [
     company: "Softserve inc.",
     position: "Junior Web Developer",
     description:
-      "Worked on a white-label product involving a series of interconnected microservices aimed at improving the user experience across various finance and crypto investment platforms. The key features of these products included crypto wallet functionality,  transaction handling, Know Your Customer (KYC) and Know Your Business (KYB) processes, multiple payment methods, integration with users' banks, and UI customization for all products.",
+      "Worked on a white-label product involving a series of interconnected micro frontends projects aimed at improving the user experience across various finance and crypto investment platforms. The key features of these products included crypto wallet functionality,  transaction handling, Know Your Customer (KYC) and Know Your Business (KYB) processes, multiple payment methods, integration with users' banks, and UI customization for all products.",
     enviroment: [
       "Jira",
       "Azure DevOps",
@@ -61,6 +61,7 @@ const ExperienceData = [
     isRightSide: true,
   },
 ];
+
 export default function Experience({
   ...props
 }: React.HTMLAttributes<HTMLDivElement>) {
