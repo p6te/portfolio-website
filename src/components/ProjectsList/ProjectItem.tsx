@@ -107,7 +107,7 @@ export default function ProjectItem({
                   !isOpen && "translate-y-[300px]"
                 }`}
                 variants={{
-                  initial: { transform: "translateY(+300px)" },
+                  initial: { transform: "translateY(+400px)" },
                   hover: { transform: "translateY(+50px)" },
                   open: {
                     transform: "translateY(0)",
