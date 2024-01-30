@@ -19,8 +19,13 @@ export default function Hero() {
             </h1>
           </div>
         </FadeComponent>
-        <FadeComponent triggerOnce delay={200} direction="left">
-          <h5 className="w-2/3  text-xs font-extralight tracking-wide md:text-base ">
+        <FadeComponent
+          triggerOnce
+          delay={200}
+          direction="left"
+          className="md:w-2/3"
+        >
+          <h5 className="text-xs font-extralight tracking-wide md:text-base ">
             Welcome to my digital space! I&apos;m Web Developer on a journey to
             create impactful and immersive online experiences. Armed with a love
             for coding and a keen eye for design, I transform ideas into dynamic
@@ -30,11 +35,11 @@ export default function Hero() {
           </h5>
         </FadeComponent>
         <FadeComponent triggerOnce delay={500} direction="left">
-          <div>
+          <div className="flex flex-wrap gap-3">
             <Link href={"#Contact"} scroll>
               <Button>Contact me</Button>
             </Link>
-            <span className="mx-2"></span>
+
             <Link href={"#Projects"} scroll>
               <Button outline>View all my works</Button>
             </Link>
