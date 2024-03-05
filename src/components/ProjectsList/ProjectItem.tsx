@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MotionConfig, motion, useAnimationControls } from "framer-motion";
+import { MotionConfig, motion } from "framer-motion";
 import Button from "@/components/common/Button";
 import Image, { StaticImageData } from "next/image";
 import SkillTag from "./SkillTag";
@@ -23,7 +23,7 @@ export default function ProjectItem({
   title,
 }: Props) {
   const [isHover, setIsHover] = useState(false);
-  const { isSm, isMd, isLg } = useBreakpoints();
+  const { isLg } = useBreakpoints();
   return (
     <>
       {isLg ? (
@@ -59,8 +59,8 @@ export default function ProjectItem({
                 <motion.h2
                   variants={{
                     initial: { filter: "blur(4px)" },
-                    hover: { filter: "none" },
-                    open: { filter: "none" },
+                    hover: { filter: "blur(0px)" },
+                    open: { filter: "blur(0px)" },
                   }}
                   animate={isOpen ? "open" : isHover ? "hover" : "initial"}
                   className={`my-4 text-4xl font-semibold  lg:text-6xl ${
